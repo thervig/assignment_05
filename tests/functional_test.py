@@ -54,10 +54,14 @@ class TestFunctionalPointPattern(unittest.TestCase):
         self.assertEqual(len(permutations), 99)
         self.assertNotEqual(permutations[0], permutations[1])
 
-        #As above, update the module and function name.
+        # As above, update the module and function name.
         lower, upper = point_pattern.compute_critical(permutations)
         self.assertTrue(lower > 0.03)
         self.assertTrue(upper < 0.07)
         self.assertTrue(observed_avg < lower or observed_avg > upper)
+
+        # As above, update the module and function name.
+        significant = point_pattern.check_significant(lower, upper, observed)
+        self.assertTrue(significant)
 
         self.assertTrue(False)

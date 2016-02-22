@@ -21,8 +21,11 @@ can alter these values if they like.
 function you wrote in 4.  If p = 99, then the function in 4 should return a list
 of 99 distances.  This function will take that list and find the smallest
 and largest distances.  These are the critical points of the Monte Carlo test.
-6. Write tests for items 3, 4, and 5.
-7. Look at the file, functional_test.py.  In that file I have written a single
+6. Write a function that takes the critical points of the Monte Carlo simulation
+and the observed value and returns True is the observed distance is significant,
+i.e., less than or greater than the observed.  Otherwise, return False.
+7. Write tests for items 3, 4, 5, and 6.
+8. Look at the file, functional_test.py.  In that file I have written a single
 functional test that ties together all of your previous work.  For this test,
 you should replace the module and function names with your own values.  For example,
 I assume that all the necessary methods are in the point_pattern module.  Since you
