@@ -12,7 +12,7 @@ Tasks:
 1. Organize the functions that were in `point_pattern.py` into the appropriate
 modules.
 2. Update the tests to reflect the new structure.
-3. Write a function to generate $n$ random points, where the user defines $n$.
+3. Write a function to generate $n$ random points, where the user defines $n$.  Clarification: Please have the random points in the domain [0,1] for the functional tests to pass.
 4. Write a function that takes $p$ an integer number of permutations.  For each 
 permutation, create $n$ random points and compute the mean nearest neighbor
 distance.  Let this function default to p=99 and n=100.  Make sure that the user 
