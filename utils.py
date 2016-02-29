@@ -15,8 +15,8 @@ def generate_random(n):
    return (points_list)
 
 
-def significant_distance(lower, upper, distance):
-    return (lower > distance) or (upper < distance)
+def significant_distance(lower, upper, observed):
+    return (lower > observed) or (upper < observed)
 
 
 def mean_center(points):
