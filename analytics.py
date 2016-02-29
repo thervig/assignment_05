@@ -65,8 +65,7 @@ def average_nearest_neighbor_distance(points):
 
         sum_nn_dis += nn_dis
 
-def permutations(p = 99):
-    n = 100
+def permutations(p = 99, n = 100):
     permutations = []
     for i in range(p):
         permutations.append(average_nearest_neighbor_distance(generate_random(n)))
