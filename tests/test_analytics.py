@@ -15,4 +15,4 @@ class TestAnalytics(unittest.TestCase):
         
     def test_critical_points(self):
         criticals = analytics.critical_points([1, 2, 3, 4, 5])
-        self.assterTrue(criticals(min) == 1 and criticals(max) == 5
+        self.assterTrue(criticals(min) == 1 and criticals(max) == 5)
