@@ -14,5 +14,5 @@ class TestUtils(unittest.TestCase):
         self.assertEqual(len(utils.generate_random(1000)), 1000)
     
     def significant_distance_test(self):
-        self.assertFalse(utils.significant_distance(9.9, 30, 10))
-        self.assertTrue(utils.significant_distance(10, 30, 9.9))
+        self.assertFalse(utils.significant_distance())
+        self.assertTrue(utils.significant_distance())
