@@ -1,4 +1,5 @@
 from .utils import euclidean_distance
+from .utils import generate_random
 
 
 def find_largest_city(gj):
