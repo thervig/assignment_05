@@ -16,7 +16,12 @@ def generate_random(n):
 
 
 def significant_distance(lower, upper, observed):
-    return (lower > observed) or (upper < observed)
+    if (lower > observed) or (upper < observed):
+       result = True
+    else:
+       result = False
+       
+    return result
 
 
 def mean_center(points):
