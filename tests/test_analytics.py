@@ -9,3 +9,6 @@ class TestAnalytics(unittest.TestCase):
 
     def setUp(self):
         pass
+    
+    def num_of_permutations_test(self):
+        self.assertEqual
