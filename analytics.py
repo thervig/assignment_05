@@ -64,7 +64,7 @@ def average_nearest_neighbor_distance(points):
 
         sum_nn_dis += nn_dis
 
-def num_of_permutations(p = 99):
+def permutations(p = 99):
     n = 100
     permutations = []
     for i in range(p):
@@ -76,7 +76,5 @@ def num_of_permutations(p = 99):
 def critical_points(p):
     """
     Lowest distance and greatest distance of points.
-    :param p:
-    :return:
     """
     return min(p), max(p)
