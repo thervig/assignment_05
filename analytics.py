@@ -73,7 +73,7 @@ def permutations(p = 99, n = 100):
     return permutations
 
 
-def critical_points(p):
+def compute_critical(p):
     """
     Lowest distance and greatest distance of points.
     """
