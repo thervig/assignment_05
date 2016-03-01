@@ -15,9 +15,9 @@ class TestAnalytics(unittest.TestCase):
         
     def test_critical(self):
         critical_points = analytics.critical_points(analytics.permutations)
-        self.assertEqual(min(analytics.permutations)
-        self.assertEqual(max(analytics.permutations)
+        self.assertEqual(min(analytics.permutations))
+        self.assertEqual(max(analytics.permutations))
     
     def test_significance(self):
         critical = analytics.critical_points(analytics.permutations)
-        self.assertTrue(critical_points[0] == min(analytics.permutations) and critical_points[
+        self.assertTrue(critical_points[0] == min(analytics.permutations) and critical_points[1] == max(analytics.permutations))
