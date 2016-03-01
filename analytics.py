@@ -66,17 +66,32 @@ def average_nearest_neighbor_distance(points):
                     nn_dis = distance
 
         sum_nn_dis += nn_dis
+        mean_distance = sum_nn_dis / len(points)
+    return mean_distance
 
 def permutations(p = 99, n = 100):
     permutations = []
     for i in range(p):
-        permutations.append(average_nearest_neighbor_distance(generate_random(n)))
+        points_list = generate_random(n)
+        permutations.append(average_nearest_neighbor_distance(points_list))
 
     return permutations
 
 
-def compute_critical(p):
+def critical_points(permutations):
     """
     Lowest distance and greatest distance of points.
     """
-    return min(p), max(p)
+    criticals = []
+    lower = min(permutations)
+    upper = max(permutations)
+    return permutations
+
+
+def significant_distance(lower, upper, observed):
+    if (lower > observed) or (upper < observed):
+       result = True
+    else:
+       result = False
+       
+    return result
