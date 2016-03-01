@@ -15,15 +15,6 @@ def generate_random(n):
    return (points_list)
 
 
-def significant_distance(lower, upper, observed):
-    if (lower > observed) or (upper < observed):
-       result = True
-    else:
-       result = False
-       
-    return result
-
-
 def mean_center(points):
     """
     Given a set of points, compute the mean center
