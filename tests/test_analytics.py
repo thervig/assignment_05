@@ -11,7 +11,7 @@ class TestAnalytics(unittest.TestCase):
         pass
     
     def test_permutations(self):
-        self.assertEqual(len(analytics.permutations(100), 100))
+        self.assertEqual(len(analytics.permutations(100)), 100)
         
     def test_critical(self):
         critical_points = analytics.critical_points(analytics.permutations)
