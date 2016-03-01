@@ -61,7 +61,7 @@ class TestFunctionalPointPattern(unittest.TestCase):
         self.assertTrue(observed_avg < lower or observed_avg > upper)
 
         # As above, update the module and function name.
-        significant = analytics.check_significant(lower, upper, observed_avg)
+        significant = analytics.check_significant(lower, upper, 100)
         self.assertTrue(significant)
 
         self.assertTrue(True)
