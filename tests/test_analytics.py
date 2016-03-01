@@ -13,6 +13,6 @@ class TestAnalytics(unittest.TestCase):
     def test_permutations(self):
         self.assertEqual(len(analytics.permutations(100), 100)
         
-    def test_compute_critical(self):
+    def test_critical(self):
         criticals = analytics.critical_points([1, 2, 3, 4, 5])
         self.assterTrue(criticals(min) == 1 and criticals(max) == 5)
