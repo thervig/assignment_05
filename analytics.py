@@ -1,3 +1,5 @@
+import math
+import random
 from .utils import euclidean_distance
 from .utils import generate_random
 
