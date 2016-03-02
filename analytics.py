@@ -82,10 +82,10 @@ def critical_points(permutations):
     """
     Lowest distance and greatest distance of points.
     """
-    criticals = []
+   
     lower = min(permutations)
     upper = max(permutations)
-    return permutations
+    return lower, upper
 
 
 def significant_distance(lower, upper, observed):
